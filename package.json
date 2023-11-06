@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=0.10.3 <15"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
