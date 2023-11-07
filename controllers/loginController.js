@@ -2,6 +2,11 @@ const passport = require("passport");
 const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 
+//For Main Page
+const mainView = (req,res) =>{
+  res.render("main",{})
+};
+
 //For Register Page
 const registerView = (req, res) => {
     res.render("register", {});
@@ -83,6 +88,7 @@ const loginUser = (req, res) => {
   };
 
 module.exports = {
+    mainView,
     registerView,
     loginView,
     registerUser,
